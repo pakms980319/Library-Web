@@ -1,0 +1,12 @@
+table {
+    width:880px;
+    text-align: left;
+    font-size: medium;
+    border-collapse: separate;
+    border-spacing:0 18px;
+}
+
+td:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

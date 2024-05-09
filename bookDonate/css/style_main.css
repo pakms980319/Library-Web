@@ -1,0 +1,10 @@
+#main_center_center {
+    position: absolute;
+    width: 980px; height: 400px;
+    margin-top: 0px; padding: 0px;
+}
+#main_center_bottom {
+    position: absolute;
+    width: 980px; height: 220px;
+    margin-top: 0px; padding: 0px;
+}

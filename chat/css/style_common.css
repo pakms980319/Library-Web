@@ -1,0 +1,78 @@
+/* 
+    작성자: 박민석
+    메인 웹페이지 기본 설정
+ */
+
+@charset 'utf-8';
+
+html {
+
+}
+
+body {
+    margin: 0px auto; padding: 0px;
+}
+
+ul, li {
+    list-style-type: none;
+    line-height: 18px;
+}
+
+img, a {
+    border-style: none;
+    margin: 0px; padding: 0px;
+}
+
+div, p, ul, li, form {
+    margin: 0px; padding: 0px;
+}
+
+
+
+
+
+/* 기본 폰트 설정 */
+body {
+    font-size: small;
+    font-family: 새굴림, 'New Gulim', 돋움, 굴림, Dotum, AppleGothic, Arial, Verdana, sans-serif;
+    color: #333333;
+}
+
+a {
+    font-size: small;
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:link {
+    font-size: small;
+    color: #333333;
+    text-decoration: none;
+}
+a:hover {
+    font-size: small;
+    color: #3366cc;
+    text-decoration: underline;
+}
+a:visited {
+    font-size: small;
+    color: #333333;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 150%;
+}
+h2 {
+    font-size: 130%;
+}
+h3 {
+    font-size: 120%;
+}
+
+select, input, textarea {
+    font-size: small;
+    font-family: 돋움, 굴림, Doturn, AppleGothic, Arial, Verdana, sans-serif;
+    font: sans-serif;
+    color: #666666;
+}

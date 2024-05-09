@@ -1,0 +1,11 @@
+#bookDetail {
+    position:absolute;
+    width: 980px;
+    height: 450px;
+}
+
+.dataList{
+    height: 30px;
+    font-size:medium;
+}
+

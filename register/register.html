@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시민 도서관 웹페이지</title>
+    <link rel="stylesheet" href="./css/style_common.css">
+    <link rel="stylesheet" href="./css/style_common_layout.css">
+    <link rel="stylesheet" href="./css/style_header.css">
+    <link rel="stylesheet" href="./css/style_main.css">
+    <link rel="stylesheet" href="./css/style_footer.css">
+</head>
+<body>
+    <div id="body-wrap">
+
+        <!-- header 시작 ================================================================================================================================ -->
+        <div id="header">
+
+            <div id="header_logo">
+                <a href="../index.html">
+                    <!-- 이미지 출처: https://kr.lovepik.com/download/detail/450005420 -->
+                    <img src="./img/main_logo2.png" alt="시민 도서관">
+                </a>
+            </div>
+
+
+            <!-- header_menu_top 시작 ================================================================================================================================ -->
+            <div id="header_menu_top">
+                <ul>
+
+                    <li>
+                        <script>
+                            for (var i = 0; i < localStorage.length; i++) {
+                                var key = localStorage.key(i);
+                                var user = JSON.parse(localStorage.getItem(key));
+
+                                if (user.isLoggedIn === 0) {
+                                    document.write('<a href="../login/join+login.html">');
+                                    document.write('<img src="./img/main_menu_icon1.png" alt="LOGIN">');
+                                    document.write('</a>');
+                                } else if (user.isLoggedIn === 1) {
+                                    document.write('<img src="./img/main_menu_icon4.png" alt="LOGOUT" onclick="logout()">');
+                                    break;
+                                }
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            <img src="./img/main_menu_icon2.png" alt="HOME">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://library.daegu.go.kr/jungang/index.do">
+                            <img src="./img/main_menu_icon3.png" alt="중앙도서관">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- header_menu_top 끝 ================================================================================================================================ -->
+
+            <script src="./javascript/logout.js"></script>
+            <!-- header_menu 시작 ================================================================================================================================ -->
+            <div id="header_menu">
+                <ul>
+                    <li>
+                        <a href="../information/information.html">
+                            <img src="./img/main_menu1.png" alt="홈페이지 소개">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../login/mypage.html">
+                            <img src="./img/main_menu2.png" alt="마이페이지">
+                        </a>
+                    </li>
+                    <li>
+                        <script>
+                            for (var i = 0; i < localStorage.length; i++) {
+                                var key = localStorage.key(i);
+                                var user = JSON.parse(localStorage.getItem(key));
+
+                                if (user.isLoggedIn === 0) {
+                                    document.write('<a href="../login/join+login.html">');
+                                    document.write('<img src="./img/main_menu3.png" alt="편의시설">');
+                                    document.write('</a>');
+                                } else if (user.isLoggedIn === 1) {
+                                    document.write('<a href="../seat/seat.html">');
+                                    document.write('<img src="./img/main_menu3.png" alt="편의시설">');
+                                    document.write('</a>');
+                                    break;
+                                }
+                            }
+                        </script> 
+                        <!-- <a href="#">
+                            <img src="./img/main_menu3.png" alt="편의시설">
+                        </a> -->
+                    </li>
+                    <li>
+                        <script>
+                            for (var i = 0; i < localStorage.length; i++) {
+                                var key = localStorage.key(i);
+                                var user = JSON.parse(localStorage.getItem(key));
+
+                                if (user.isLoggedIn === 0) {
+                                    document.write('<a href="../login/join+login.html">');
+                                    document.write('<img src="./img/main_menu4.png" alt="헌책기부">');
+                                    document.write('</a>');
+                                } else if (user.isLoggedIn === 1) {
+                                    document.write('<a href="../bookDonate/donate.html">');
+                                    document.write('<img src="./img/main_menu4.png" alt="헌책기부">');
+                                    document.write('</a>');
+                                    break;
+                                }
+                            }
+                        </script>            
+                    </li>
+                </ul>
+            </div>
+            <!-- header_menu 끝 ================================================================================================================================ -->
+            <hr>
+
+
+        </div>
+        <!-- header 끝 ================================================================================================================================ -->
+        
+
+        <!-- main 시작 ================================================================================================================================ -->
+        <div id="main">
+            <h2>개인정보 처리방침</h2> <br>
+
+            <p style="font-size: 1.05em;">
+                
+
+                본 도서관은 개인정보보호법을 준수하고 이용자의 개인정보를 소중하게 다루고 있습니다. 이에 개인정보 처리방침을 다음과 같이 안내해 드립니다.<br><br>
+
+                1. 수집하는 개인정보 항목<br>
+                &nbsp;도서관은 이용자의 도서 대출, 회원 가입, 문의 등을 위해 필요한 최소한의 개인정보를 수집합니다. 수집하는 개인정보 항목은 다음과 같습니다:<br>
+                *&nbsp;성명: 신원 확인 및 서비스 제공을 위해 수집합니다.<br>
+                *&nbsp;연락처: 문의 사항에 대한 답변 및 서비스 제공을 위해 수집합니다.<br>
+                *&nbsp;주소: 도서 대출 및 배송 등의 목적으로 수집합니다.<br><br>
+                2. 개인정보의 수집 및 이용목적<br>
+                &nbsp;도서관은 이용자의 개인정보를 다음과 같은 목적으로 수집 및 이용합니다:<br>
+                *&nbsp;도서 대출 및 반납 관리<br>
+                *&nbsp;회원 가입 및 관리<br>
+                *&nbsp;문의 사항에 대한 답변 및 서비스 제공<br><br>
+
+                3. 개인정보의 보유 및 이용기간<br>
+                &nbsp;도서관은 이용자의 개인정보를 수집 및 이용목적을 달성한 후에는 지체 없이 파기합니다. 단, 관련 법령에 따라 보존할 필요가 있는 경우에는 해당 기간 동안 보관하며, 보존 이후에는 즉시 파기합니다.<br><br>
+
+                4. 개인정보의 제공 및 공유<br>
+                &nbsp;도서관은 이용자의 개인정보를 본인의 동의 없이 제3자에게 제공하거나 공유하지 않습니다. 다만, 이용자의 동의가 있는 경우 또는 관련 법령에 의해 요구되는 경우에 한하여 개인정보를 제공할 수 있습니다.<br><br>
+
+                5. 개인정보의 안전성 보장<br>
+                &nbsp;도서관은 이용자의 개인정보를 안전하게 관리하고 보호하기 위해 보안 조치를 취하고 있습니다. 개인정보의 처리에 있어서는 관련 법령에서 요구하는 내용을 준수하며, 정보보호를 위해 합리적인 기술적, 물리적, 관리적 조치를 이행합니다.<br><br>
+
+                6. 개인정보에 관한 권리<br>
+                &nbsp;이용자는 언제든지 자신의 개인정보에 대해 열람, 정정, 삭제, 처리정지를 요청할 수 있습니다. 개인정보에 대한 열람, 정정, 삭제, 처리정지를 위해서는 도서관의 개인정보 관리 담당자에게 문의하시기 바랍니다.<br><br>
+
+                도서관은 이용자의 개인정보 처리에 대한 동의 철회를 언제든지 가능하게 하고 있으며, 동의 철회 시 개인정보를 파기하는 등 필요한 조치를 취합니다.<br><br>
+
+                개인정보 처리방침에 대한 문의사항이 있으시면 도서관의 개인정보 관리 담당자에게 문의하시기 바랍니다.<br><br>
+
+                본 개인정보 처리방침은 변경될 수 있으며, 변경 사항이 있을 경우에는 도서관 웹페이지를 통해 공지하겠습니다.<br><br>
+
+                감사합니다.
+            </p>
+            
+        </div>
+        <!-- main 끝 ================================================================================================================================ -->
+
+
+
+
+
+    </div>
+</body>
+</html>

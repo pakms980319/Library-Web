@@ -1,0 +1,69 @@
+/* 
+    작성자: 박민석
+    메인 웹페이지 기본 설정
+ */
+
+@charset 'utf-8';
+
+html { 
+
+}
+
+body {
+	margin:0px auto; padding: 0px;
+}
+	
+table {
+	margin:0px;	padding:0px;
+	width: 100%;
+	border-collapse: collapse;
+}
+	
+table tr th, table tr td {
+		margin:0px;	padding:0px;
+		border-collapse: collapse;
+		word-break:break-all;
+		line-height: 30px;
+}
+	
+ul, li {
+	list-style-type: none;
+	line-height: 18px;
+}
+	
+img, a {
+	margin:0px;	padding:0px;
+	border-style:none;
+}
+	
+div, p, ul, li, form, iframe, marquee {
+	margin:0px;	padding:0px;
+}
+	
+hr {
+	/* display: none; */
+	clear:both;
+}
+
+body {
+	font-size: small;
+	font-family: 돋움, 굴림, Dotum, AppleGothic, Arial, Verdana, sans-serif;
+	font:sans-serif;
+	color: #333333;
+}	
+
+a { color:#333333; text-decoration:none; cursor:hand;}
+a:link {color:#333333; text-decoration:none; }
+a:hover { color:#3366cc; text-decoration:underline; }
+a:visited {color:#333333; text-decoration:none; }
+
+h1 { font-size: 150%;}
+h2 { font-size: 130%;}
+h3 { font-size: 120%;}
+
+select, input, textarea, pre {
+	font-size: small;
+	font-family: 돋움, 굴림, Dotum, AppleGothic, Arial, Verdana, sans-serif;
+	font:sans-serif;
+	color: #666666;
+}

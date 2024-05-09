@@ -1,0 +1,332 @@
+/* 
+    작성자: 박민석
+    메인 웹페이지 main 상세 레이아웃
+ */
+
+/* main 시작 =================================================================================================================================== */
+#main {
+    position: relative;
+    margin: 0px auto;
+    width: 980px; height: 600px;
+    margin-top: 0px; padding: 0px;
+}
+
+    /* main 상세 레이아웃 시작 =================================================================================================================================== */
+
+
+    /* main_top 기본 레이아웃 */
+    #main_top {
+        position: absolute;
+        left: 0px; top: 0px;
+        width: 980px; height: 300px;
+    }
+
+        /* main_top 상세 레이아웃 ============================================================== */
+        #main_top {
+
+        }
+        #main_top #main_flash {
+            position: absolute;
+            right: 0; top: -10px;
+        }
+        /* main_top 상세 레이아웃 끝 ============================================================== */
+
+    /* main_top 기본 레이아웃 끝 */
+
+
+    /* main_center 기본 레이아웃 */
+    #main_center {
+        position: absolute;
+        left: 0px; top: 305px;
+        width: 980px; height: 85px;
+        z-index: 30;
+        background-color: rgba(102, 102, 82, 0.15)
+    }
+        /* main_center 상세 레이아웃 ============================================================================== */
+
+        /* main-center-center 기본 레이아웃 */
+        .main-center-center {
+            float: left; position: relative;
+            width: 980px; height: 85px;
+            margin: 0px; padding: 0px;
+        }
+
+            /* 검색창 상세 레이아웃 시작 ====================================== */
+            /* 기본 스타일 */
+            #TabmenuEDS01 {
+                width: 100%;
+                max-width: 464px;
+                position: relative;
+                z-index: 1;
+                border: 2.5px solid red;
+                background-color: white;
+                margin: 0 auto; /* 가운데 정렬 */
+            }
+
+            #TabmenuEDS01 .title {
+                width: 100%;
+                padding: 4px;
+                box-sizing: border-box; /* padding 포함한 실제 크기 계산 */
+                display: flex; /* 플렉스 레이아웃 사용 */
+                justify-content: space-between; /* 내부 요소 간격 조정 */
+            }
+
+            #TabmenuEDS01 .title li {
+                flex: 1; /* 플렉스 아이템 확장 */
+            }
+
+            #TabmenuEDS01 ul {
+                padding: 5px 0 0 2px;
+                box-sizing: border-box;
+            }
+
+            #TabmenuEDS01 .tab_bg {
+                height: 44px;
+                padding: 3px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center; /* 세로 중앙 정렬 */
+            }
+
+            #TabmenuEDS01 .tab_bg ul li input.search_btn {
+                margin-left: auto; /* 왼쪽에 여백을 최대로 주어 오른쪽 정렬 효과 */
+            }
+
+            /* 데스크탑 뷰포트에 대한 스타일 */
+            @media only screen and (min-width: 981px) {
+                #TabmenuEDS01 {
+                    position: absolute;
+                    left: 257px;
+                    top: 0px;
+                }
+            }
+
+            /* 추가로 필요한 모바일 및 태블릿 뷰포트에 대한 스타일을 여기에 정의하세요. */
+
+            
+            /* 검색창 상세 레이아웃 시작 ====================================== */
+
+        /* main_center 상세 레이아웃 끝 ============================================================================== */
+
+
+    /* main_bottom 기본 레이아웃*/
+    #main_bottom {
+        position: absolute;
+        left: 0px;
+        top: 385px;
+        width: 980px;
+        height: 180px;
+        text-align: left;
+    }
+        /* main_bottom 상세 레이아웃 ================================================================== */
+
+        /* main_bottom graph 상세 레이아웃 시작 ================================================================= */
+
+        /* main_bottom graph 기본 레이아웃 */
+        #main_bottom #graph {
+            position: absolute;
+            top: 0px; left: 0px;
+            width: 234px; height: 140px;
+        }
+            #main_bottom #graph h2 {
+                position: absolute;
+                top: 18px; left: -15px;
+                margin: 0; padding: 0;
+            }
+            #main_bottom #graph select {
+                position: absolute;
+                top: 24.5px; right: 7px;
+                width: 70px;
+                margin: 0; padding: 0;
+            }
+            #main_bottom #graph #graph_img1 {
+                position: absolute;
+                top: 53px; left: 14px;
+                margin: 0; padding: 0;
+            }
+            #main_bottom #graph #graph_img2 {
+                position: absolute;
+                top: 50px; left: 10px;
+                margin: 0; padding: 0;
+            }
+
+        /* main_bottom graph 상세 레이아웃 끝 ================================================================= */
+        
+        /* main_bottom tabgroup 상세 레이아웃 시작 ================================================================= */
+
+        /* main_bottom tabgroup 기본 레이아웃 */
+        #main_bottom #tabgroup {
+            position: absolute;
+            top: 23px; left: 268px;
+            width: 453px; height: 150px;
+            overflow: auto;
+            text-align: left;
+        }
+            #tabgroup .tabtit {
+                position: absolute;
+                left: -2px; top: 0px;
+            }
+            #tabgroup h2 {
+                text-align: left;
+                height: 22px;
+                margin: 0 0 -36px 0;
+            }
+            #tabgroup h2 img {
+                vertical-align: top;
+            }
+            #tabgroup ul.list {
+                padding: 11px 0 0 0px;
+                width: 436px;
+                margin: 24px 0 0 0;
+            }
+            #tabgroup ul.list li {
+                height: 28px;
+                line-height: 21px;
+                text-align: left;
+                position: relative;
+                /* padding-top: 5px; */
+                /* height: 19px; */
+                color: #666666;
+            }
+            #tabgroup ul.list li a {
+                color: #666666;
+            }
+            #tabgroup ul.list li a:hover {
+                color: #666666;
+                text-decoration: none;
+            }
+            #tabgroup ul.list li span.date {
+                position: absolute;
+                right: 0; top: 0;
+            }
+            #tabgroup p {
+                top: 6px; right: 20px;
+                text-align: right;
+                margin: 10px 0;
+            }
+            #tabgroup p.more {
+                margin: 10px 0;
+                position: absolute;
+                right: 14px;
+                text-align: right;
+                top: -6px;
+            }
+
+        /* main_bottom tabgroup 상세 레이아웃 끝 ================================================================= */
+
+        /* main_bottom tabgroup2 상세 레이아웃 시작 ================================================================= */
+
+        /* main_bottom tabgroup2 기본 레이아웃 */
+        #main_bottom #tabgroup2 {
+            position: absolute;
+            top: 23px; right: 0px;
+            width: 239px; height: 170px;
+            overflow: auto;
+            text-align: left;
+        }
+            #tabgroup2 h2 {
+                position: absolute;
+                text-align: left;
+                top: 2px;
+                height: 22px;
+                margin: 0 0 -22px 0;
+            }
+            #tabgroup2 h2 img {
+                vertical-align: top;
+            }
+            #tabgroup2 h2.tabtit1 {
+                left: 0px;
+            }
+            #tabgroup2 p.more {
+                margin: 10px 0;
+                position: absolute;
+                right: 0;
+                text-align: right;
+                top: -6px;
+            }
+            #tabgroup2 #listb01 {
+                height: 140px;
+            }
+            #tabgroup2 #listb01 p.recommend_img {
+                position: absolute;
+                top: 34px; left: 0;
+                width: 76px;
+            }
+                #listb01 ul {
+                    position: absolute;
+                    top: 32px; left: 85px;
+                    padding: 0; margin: 0;
+                }
+                #listb01 ul li.title {
+                    color: #4b91ce;
+                    font-weight: bold;
+                    letter-spacing: -1px;
+                    position: absolute;
+                    top: 0;
+                }
+                #listb01 ul li.writer {
+                    color: #967015;
+                    top: 36px;
+                    letter-spacing: -1px;
+                    position: absolute;
+                }
+                #listb01 ul li.resume {
+                    color: #777777;
+                    top: 58px;
+                    letter-spacing: -1px;
+                    position: absolute;
+                }
+
+/* 태블릿 뷰 */
+@media screen and (max-width: 980px) {
+    #main_bottom {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #main_bottom #graph,
+    #main_bottom #tabgroup,
+    #main_bottom #tabgroup2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #main_bottom #tabgroup {
+        margin-top: 70px;
+    }
+
+}
+
+/* 모바일 뷰 */
+@media screen and (max-width: 480px) {
+    #main_bottom {
+        top: auto;
+        padding: 0 10px;
+    }
+
+    #main_bottom #graph h2 {
+        top: 10px;
+        left: 0;
+    }
+
+    #main_bottom #graph select {
+        right: 10px;
+    }
+
+    #main_bottom #tabgroup ul.list,
+    #main_bottom #tabgroup2 #listb01 ul {
+        padding-left: 10px;
+        width: 100%;
+    }
+}
+
+        /* main_bottom tabgroup2 상세 레이아웃 끝 ================================================================= */
+
+    /* main 상세 레이아웃 끝 =================================================================================================================================== */
+
+/* main 끝 =================================================================================================================================== */
